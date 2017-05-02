@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Brandon Grotesque, sans-serif;
+}
+
+.navdots {
+    position: fixed;
+    z-index: 10;
+    width: 50px;
+    height: 200px;
+    top: 30vh;
+    background-color: lightgrey;
+}
+
+.section {
+    padding: 50px;
+    background-color: ed;
+    margin-left: -15px;
+    margin-right: -15px;
+    height: 100vh;
+}
+
+.section1 {
+    background-image: url(../img/bg_mushrooms.jpg);
+}
+
+.section1 img {
+    height: 200px;
+}
+
+.section2 {
+    background-color: rgba(34, 139, 34, 0.46);
+}
+
+.section2 .left {
+    text-align: right;
+}
+
+.section3 {
+    background-image: url(../img/bg_onions.jpg);
+}
+
+.section4 {
+    background-color: rgba(34, 139, 34, 0.46);
+}
+
+.section5 {
+    background-image: url(../img/bg_limesnlemons.jpg);
+    position: relative;
+}
+
+#signupForm {
+    margin-right: 7.5%;
+    margin-left: 7.5%;
+    width: 85%;
+}
+
+@media (max-width: 660px){
+    #signupForm {
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 90%;
+    }
+}
+
+@media (min-width: 660px){
+    #signupForm {
+        display: block;
+        margin: 0 auto;
+        max-width: 500px;
+    }
+}
+
+#signupForm input {
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 0;
+}
+
+#signupForm button {
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 0;
+}
+
+footer {
+    padding: 15px;
+    border-top: 1px solid #b2b2b2;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+footer span:nth-child(2) {
+    float: right;
+}
