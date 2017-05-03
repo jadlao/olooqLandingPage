@@ -5,21 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Olooq</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="container-fluid">
-        <nav class="navdots">
-            
+        <!-- FIXED SIDE NAV -->
+        <nav class="nav-dots">
+            <ul class="nav-dots">
+                <li>
+                    <a href="#section1"><div class="dot"></div></a>
+                </li>
+                <li>
+                    <a href="#section2"><div class="dot"></div></a>
+                </li>
+                <li>
+                    <a href="#section3"><div class="dot"></div></a>
+                </li>
+                <li>
+                    <a href="#section4"><div class="dot"></div></a>
+                </li>
+                <li>
+                    <a href="#section5"><div class="dot"></div></a>
+                </li>
+            </ul>
         </nav>
-       
-        <div class="section section1 text-center">
+        
+        <!-- INTRO -->
+        <div class="section section1 text-center" id="section1">
             <img class="center-block img-responsive" src="img/logo-olooq-circle.gif">
             <br>
             <h1>compare and search for organic products</h1>
         </div>
-        <div class="section section2">
+        
+        <!-- FEATURES -->
+        <div class="section section2" id="section2">
             <h1 class="text-center">FEATURES</h1>
             <div class="row">
                 <div class="col-xs-6 left">
@@ -30,13 +52,46 @@
                 </div>
             </div>
         </div>
-        <div class="section section3">
+        
+        <!-- BENEFITS -->
+        <div class="section section3" id="section3">
             <h1 class="text-center">BENEFITS</h1>
         </div>
-        <div class="section section4">
-            <h1 class="text-center">CATEGORIES</h1>
+        
+        <!-- CATEGORIES -->
+        <div class="section section4" id="section4">
+            <div class="row">
+                <div class="category col-xs-12 col-sm-3">
+                    <h2>Produce</h2>
+                </div>
+                <div class="category col-xs-12 col-sm-3">
+                    <h2>Meat</h2>
+                </div>
+                <div class="category col-xs-12 col-sm-3">
+                    <h2>Groceries</h2>
+                </div>
+                <div class="category col-xs-12 col-sm-3">
+                    <h2>Vegetables</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="category col-xs-12 col-sm-3">
+                    <h2>Dairy</h2>
+                </div>
+                <div class="category col-xs-12 col-sm-3">
+                    <h2>Skincare and beauty</h2>
+                </div>
+                <div class="category col-xs-12 col-sm-3">
+                    <h2>Household goods</h2>
+                </div>
+                <div class="category col-xs-12 col-sm-3">
+                    <h2>Frozen food</h2>
+                </div>
+            </div>
         </div>
-        <div class="section section5">
+        
+        <!-- SIGN UP -->
+        <div class="section section5" id="section5">
             <h1 class="text-center">90 days till launch<br>
             get notified for launch:</h1>
             <br>
@@ -50,8 +105,34 @@
         
         <!-- FOOTER -->
         <footer>
-            <span>&copy; OLOOQ 2017</span>
-            <span>ICONS</span>
+            &copy; OLOOQ 2017
+            <!-- Contact info and social media icons - email twitter fb insta -->
+            <div class="social">
+                <span class="fa-stack fa-lg icon">
+                  <a href="#">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </a>
+                </span> 
+                <span class="fa-stack fa-lg icon">
+                  <a href="#">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </a>
+                </span> 
+                <span class="fa-stack fa-lg icon">
+                  <a href="#">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </a>
+                </span> 
+                <span class="fa-stack fa-lg icon">
+                  <a href="#">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                  </a>
+                </span> 
+            </div>
         </footer>
                
     </div>

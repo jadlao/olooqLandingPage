@@ -1,16 +1,33 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Brandon Grotesque, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-.navdots {
+/* Background animation */
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
+
+.nav-dots {
     position: fixed;
     z-index: 10;
-    width: 50px;
+    width: 30px;
     height: 200px;
     top: 30vh;
-    background-color: lightgrey;
+    list-style: none;
+}
+
+.dot {
+    background-color: limegreen;
+    border-radius: 100%;
+    border: 1px solid #bfbaba;
+    height: 10px;
+    width: 10px;
+    position: relative;
+    margin-top: 25px; 
+    left: -20px;
 }
 
 .section {
@@ -23,6 +40,8 @@ body {
 
 .section1 {
     background-image: url(../img/bg_mushrooms.jpg);
+    
+    animation: animatedBackground 40s linear infinite;
 }
 
 .section1 img {
@@ -30,7 +49,7 @@ body {
 }
 
 .section2 {
-    background-color: rgba(34, 139, 34, 0.46);
+    background-color: #ddd;
 }
 
 .section2 .left {
@@ -42,7 +61,35 @@ body {
 }
 
 .section4 {
-    background-color: rgba(34, 139, 34, 0.46);
+    background-color: #ddd;
+    padding: 0;
+}
+
+.category {
+    height: 50vh;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+
+.category h2 {
+    position: absolute; 
+    bottom: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+/* For xs sized screens */
+@media (max-width: 768px) {
+    .section4 {
+        height: 200vh;
+    }
+    .category {
+        height: 25vh;
+    }
+}
+
+.category:hover {
+    opacity: 0.7;
 }
 
 .section5 {
@@ -56,6 +103,7 @@ body {
     width: 85%;
 }
 
+/* For xs sized screens */
 @media (max-width: 660px){
     #signupForm {
         margin-right: 5%;
@@ -64,6 +112,7 @@ body {
     }
 }
 
+/* For small sized screens */
 @media (min-width: 660px){
     #signupForm {
         display: block;
@@ -91,6 +140,24 @@ footer {
     margin-right: -15px;
 }
 
-footer span:nth-child(2) {
+footer .social {
     float: right;
+    position: relative;
+    bottom: 7.5px;
+}
+
+footer .icon {
+    padding-bottom: 15px;
+}
+
+footer .icon i:first-child {
+    color: #969696;
+}
+
+footer .icon i:nth-child(2) {
+    font-size: 14px;
+}
+
+footer .icon:hover {
+    opacity: 0.7;
 }
