@@ -20,7 +20,7 @@ html, body {
 }
 
 .dot {
-    background-color: limegreen;
+    background-color: #fff;
     border-radius: 100%;
     border: 1px solid #bfbaba;
     height: 10px;
@@ -43,12 +43,32 @@ html, body {
     animation: animatedBackground 40s linear infinite;
 }
 
+.section1 * {
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
 .section1 img {
     height: 200px;
 }
 
 .section2 {
     background-color: #ddd;
+}
+
+.section2 .row {
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.section2 h2 {
+    margin-top: 50px;
 }
 
 .section2 .left {
@@ -61,6 +81,15 @@ html, body {
 
 .benefits {
     margin: 0 50px 0 50px;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.benefits h2 {
+    margin-top: 50px;
 }
 
 .section4 {
@@ -99,13 +128,26 @@ html, body {
 
 .section5 {
     background-image: url(../img/bg_limesnlemons.jpg);
+}
+
+.section5 h1 {
     position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
 
 #signupForm {
     margin-right: 7.5%;
     margin-left: 7.5%;
+    margin-top: 50px;
     width: 85%;
+    position: relative;
+    top: 30%;
+    transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    -webkit-transform: translateY(20%);
 }
 
 /* For xs sized screens */
@@ -114,6 +156,9 @@ html, body {
         margin-right: 5%;
         margin-left: 5%;
         width: 90%;
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
     }
 }
 
@@ -169,7 +214,7 @@ footer .icon:hover {
 
 footer .arrow-to-top {
     position: fixed;
-    bottom: 90px;
+    bottom: 45px;
     right: 45px;
 }
 

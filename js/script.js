@@ -9,17 +9,45 @@ $('a[href^="#"]').on('click', function(event){
     }
 });
 
+// Vertical nav circle color
+$(document).on('scroll', function(){
+    if($(this).scrollTop() >= $('#section1').position().top){
+        console.log('hello');
+    }
+});
+
 // Features section slide in
 
 
 // Benefits section slide in
 
+// Scroll bottom function
+$.fn.scrollBottom = function(){
+    return $(document).height() - this.scrollTop() - this.height;
+};
 
 // Arrow fades at top
-$('.arrow-to-top');
+$(window).scroll(function(){
+    // Arrow fades at top
+    if($(this).scrollTop() < 100){
+        $('.arrow-to-top').fadeOut(300);
+    }else{
+        $('.arrow-to-top').fadeIn(300);
+    }
+});
 
-// Add arrow move up at bottom
-
+ // Arrow moves up above social media icons at bottom
+//$(window).scroll(function(){
+//    if($(this).scrollBottom() < 100){
+//        $('.arrow-to-top').animate({
+//            bottom: '+90'
+//        }, 200);
+//    }else{
+//        $('.arrow-to-top').animate({
+//            bottom: '+45'
+//        }, 200);
+//    }
+//});
 
 // Countdown code
 // Set date for launch, calculate date now, display countdown
