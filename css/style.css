@@ -76,7 +76,7 @@ html, body {
     height: 140px;
 }
 
-/* For small-size screens */
+/* For small-sized width screens */
 @media (min-width: 660px){
     .section2 .left .feature {
         display: flex;
@@ -94,6 +94,22 @@ html, body {
     }
 }
 
+/* For xs-sized height screens */
+@media (max-height: 660px) {
+    .section2 h1 {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+    
+    .section2 .feature h3 {
+        font-size: 1.5rem;
+    }
+    
+    .section2 .feature {
+        margin-top: -20px;
+    }
+}
+
 .section3 {
     background-image: url(../img/bg_onions.jpg);
 }
@@ -107,7 +123,7 @@ html, body {
 }
 
 .benefits h3 {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 /* For small-size screens */
@@ -125,6 +141,22 @@ html, body {
     
     .icon {
         margin-right: 10px;
+    }
+}
+
+/* For xs-sized height screens */
+@media (max-height: 660px) {
+    .section3 h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .section3 .benefit h3 {
+        font-size: 1.5rem;
+    }
+    
+    .section3 .benefit {
+        margin-top: -20px;
     }
 }
 
