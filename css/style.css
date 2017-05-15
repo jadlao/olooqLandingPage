@@ -70,15 +70,28 @@ html, body {
 .section2 h3 {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 100%;
 }
 
-.section2 .left {
-
+.section2 .feature {
+    height: 140px;
 }
 
-.section2 .right {
+/* For small-size screens */
+@media (min-width: 660px){
+    .section2 .left .feature {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .section2 .right .feature {
+        display: flex;
+        align-items: center;
+    }
     
+    .section2 .left .icon-text {
+        margin-right: 10px;
+    }
 }
 
 .section3 {
@@ -95,6 +108,24 @@ html, body {
 
 .benefits h3 {
     margin-top: 50px;
+}
+
+/* For small-size screens */
+@media (min-width: 660px){
+    .benefit {
+        display: flex;
+        align-items: center;
+    }
+    
+    .benefits {
+        position: relative;
+        margin: 0 -300px;
+        left: 50%;
+    }
+    
+    .icon {
+        margin-right: 10px;
+    }
 }
 
 .section4 {
