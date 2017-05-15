@@ -27,7 +27,7 @@ html, body {
     width: 10px;
     position: relative;
     margin-top: 25px; 
-    left: -20px;
+    left: 10px;
 }
 
 .section {
@@ -61,24 +61,20 @@ html, body {
 
 .section2 .row {
     position: relative;
-    top: 40%;
+    top: 45%;
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
 
 .section2 h3 {
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
-    text-align: right;
 }
 
 .section2 .left {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    border: 1px solid black;
+
 }
 
 .section2 .right {
@@ -90,9 +86,8 @@ html, body {
 }
 
 .benefits {
-    margin: 0 50px 0 50px;
     position: relative;
-    top: 40%;
+    top: 45%;
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
