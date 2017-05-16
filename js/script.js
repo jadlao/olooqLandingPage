@@ -12,7 +12,7 @@ $('a[href^="#"]').on('click', function(event){
 // Vertical nav circle color
 $(document).on('scroll', function(){
     if($(this).scrollTop() >= $('#section1').position().top){
-        console.log('hello');
+        //console.log('hello');
     }
 });
 
@@ -23,7 +23,8 @@ $(document).on('scroll', function(){
 
 // Scroll bottom function
 $.fn.scrollBottom = function(){
-    return $(document).height() - this.scrollTop() - this.height;
+    // console.log($(document).height() - this.scrollTop() - this.height());
+    return $(document).height() - this.scrollTop() - this.height();
 };
 
 // Arrow fades at top
@@ -37,17 +38,19 @@ $(window).scroll(function(){
 });
 
  // Arrow moves up above social media icons at bottom
-//$(window).scroll(function(){
-//    if($(this).scrollBottom() < 100){
-//        $('.arrow-to-top').animate({
-//            bottom: '+90'
-//        }, 200);
-//    }else{
-//        $('.arrow-to-top').animate({
-//            bottom: '+45'
-//        }, 200);
-//    }
-//});
+$(window).scroll(function(){
+    if($(this).scrollBottom() < 100){
+        //console.log('move up');
+        $('.arrow-to-top').stop().animate({
+            bottom: '+90'
+        }, 100);
+    }else{
+        //console.log('move down');
+        $('.arrow-to-top').stop().animate({
+            bottom: '+45'
+        }, 100);
+    }
+});
 
 // Countdown code
 // Set date for launch, calculate date now, display countdown

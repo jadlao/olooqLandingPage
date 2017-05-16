@@ -282,10 +282,11 @@ footer .icon:hover {
     opacity: 0.7;
 }
 
+/* Arrow to top of page */
 footer .arrow-to-top {
     position: fixed;
     bottom: 45px;
-    right: 45px;
+    right: 53px;
 }
 
 footer .arrow-to-top i {
