@@ -52,7 +52,8 @@ var featuresScroll = false;
 // Features section slide in from left/right
 inView('.section2').on('enter', function(){
     if(featuresScroll === false){
-        $('.feature').removeClass('hidden').delay(1000).slideDown(1000);
+        $('.left .feature').removeClass('hidden').delay(1000).toggle().toggleClass('animated bounceInLeft');
+        $('.right .feature').removeClass('hidden').delay(1000).toggle().toggleClass('animated bounceInRight');
         featuresScroll = true;
     };
 });
@@ -72,13 +73,13 @@ inView('.section3').on('enter', function(){
 
 
 // Arrow fades at top
-$(window).scroll(function(){
+$(window).scroll(_.debounce(function(){
     if($(this).scrollTop() < 100){
         $('.arrow-to-top').fadeOut(300);
     }else{
         $('.arrow-to-top').fadeIn(300);
     }
-});
+}, 100));
 
 // Scroll bottom function
 $.fn.scrollBottom = function(){
@@ -87,7 +88,7 @@ $.fn.scrollBottom = function(){
 };
 
  // Arrow moves up above social media icons at bottom
-$(window).scroll(function(){
+$(window).scroll(_.debounce(function(){
     if($(this).scrollBottom() < 100){
         //console.log('move up');
         $('.arrow-to-top').stop().animate({
@@ -99,13 +100,10 @@ $(window).scroll(function(){
             bottom: '+45'
         }, 100);
     }
-});
+}, 100));
 
 // Countdown
 
 
 
 // Set date for launch, calculate date now, display countdown
-
-// add debounce 
-

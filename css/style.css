@@ -74,6 +74,8 @@ html, body {
 
 .section2 .feature {
     height: 140px;
+    animation-duration: 2s;
+    animation-delay: 1s;
 }
 
 /* For small-sized width screens */
