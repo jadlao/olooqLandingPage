@@ -40,7 +40,7 @@ html, body {
 .section1 {
     background-image: url(../img/bg_mushrooms.jpg);
     
-    animation: animatedBackground 40s linear infinite;
+    animation: animatedBackground 100s linear infinite;
 }
 
 .section1 * {

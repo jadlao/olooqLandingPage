@@ -10,41 +10,26 @@ $('a[href^="#"]').on('click', function(event){
 });
 
 // Vertical nav circle colors
-var enterColor = '#5d985d',
+function navDotColor(enterDiv, navDot){
+    var enterColor = '#5d985d',
     exitColor = '#fff';
+    
+    // Offset to avoid two colors active at once
+    inView.offset(380);
+    inView(enterDiv).on('enter', function(){
+        $(navDot).css('background-color', enterColor);
+    });
+    inView(enterDiv).on('exit', function(){
+        $(navDot).css('background-color', exitColor);
+    });
+};
 
-// Offset to avoid two colors active at once
-inView.offset(380);
-inView('.section1').on('enter', function(){
-    $('#dot1').css('background-color', enterColor);
-});
-inView('.section1').on('exit', function(){
-    $('#dot1').css('background-color', exitColor);
-});
-inView('.section2').on('enter', function(){
-    $('#dot2').css('background-color', enterColor);
-});
-inView('.section2').on('exit', function(){
-    $('#dot2').css('background-color', exitColor);
-});
-inView('.section3').on('enter', function(){
-    $('#dot3').css('background-color', enterColor);
-});
-inView('.section3').on('exit', function(){
-    $('#dot3').css('background-color', exitColor);
-});
-inView('.section4').on('enter', function(){
-    $('#dot4').css('background-color', enterColor);
-});
-inView('.section4').on('exit', function(){
-    $('#dot4').css('background-color', exitColor);
-});
-inView('.section5').on('enter', function(){
-    $('#dot5').css('background-color', enterColor);
-});
-inView('.section5').on('exit', function(){
-    $('#dot5').css('background-color', exitColor);
-});    
+// Execute function
+navDotColor('.section1', '#dot1');
+navDotColor('.section2', '#dot2');
+navDotColor('.section3', '#dot3');
+navDotColor('.section4', '#dot4');
+navDotColor('.section5', '#dot5');
 
 // Set Features Boolean
 var featuresScroll = false;
