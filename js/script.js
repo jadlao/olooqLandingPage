@@ -12,7 +12,7 @@ $('a[href^="#"]').on('click', function(event){
 // Vertical nav circle colors
 function navDotColor(enterDiv, navDot){
     var enterColor = '#5d985d',
-    exitColor = '#fff';
+        exitColor = '#fff';
     
     // Offset to avoid two colors active at once
     inView.offset(380);
@@ -72,10 +72,32 @@ inView('.section5').on('enter', function(){
 });
 
 // Countdown
+// Set date for launch
+var countdownDate = new Date('Oct 5, 2017 14:00:00').getTime();
 
-
-
-// Set date for launch, calculate date now, display countdown
+var countDown = setInterval(function(){
+    // Today's date and time
+    var now = new Date().getTime();
+    
+    // Current countdown time
+    var currentTime = countdownDate - now;
+    
+    // Days, hours, minutes, seconds
+    var days = Math.floor(currentTime / (1000 * 60 * 60 * 24) ),
+        hours = Math.floor((currentTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes = Math.floor((currentTime % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds = Math.floor((currentTime % (60 * 1000)) / 1000);
+    
+    // print countdown on page
+    document.getElementById('countdown').innerHTML = days + " days " + hours + "hours " + minutes + "minutes " + seconds + "seconds till launch<br>get notified for launch";
+    
+    // when countdown is finished, display alternate text
+    if(currentTime < 0){
+        clearInterval(countDown);
+        document.getElementById('countdown').innerHTML = "Welcome to Olooq!";
+    }
+    
+}, 1000);
 
 // Arrow fades at top
 $(window).scroll(_.debounce(function(){
