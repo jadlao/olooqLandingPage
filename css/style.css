@@ -52,7 +52,7 @@ html, body {
 }
 
 .section1 img {
-    height: 200px;
+    height: 250px;
 }
 
 .section2 {
@@ -61,7 +61,7 @@ html, body {
 
 .section2 .row {
     position: relative;
-    top: 45%;
+    top: 40%;
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -74,8 +74,8 @@ html, body {
 
 .section2 .feature {
     height: 140px;
-    animation-duration: 2s;
-    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
 }
 
 /* For small-sized width screens */
@@ -118,7 +118,7 @@ html, body {
 
 .benefits {
     position: relative;
-    top: 45%;
+    top: 30%;
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -127,6 +127,57 @@ html, body {
 .benefits h3 {
     margin-top: 40px;
 }
+
+.benefits .benefit:nth-child(1) {
+    position: absolute;
+    top: -12rem;
+}
+
+.benefits .benefit:nth-child(2) {
+    position: absolute;
+    top: 0rem;
+}
+
+.benefits .benefit:nth-child(3) {
+    position: absolute;
+    top: 12rem;
+}
+
+/* For xs-size screen widths */
+@media (max-width: 660px) {
+    .benefits {
+        position: relative;
+        top: 30%;
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
+    
+    .benefit {
+        display: flex;
+        align-items: center;
+    }
+    
+    .icon {
+        margin-right: 10px;
+    }
+    
+    .benefits .benefit:nth-child(1) {
+        position: absolute;
+        top: -12rem;
+    }
+
+    .benefits .benefit:nth-child(2) {
+        position: absolute;
+        top: 0rem;
+    }
+
+    .benefits .benefit:nth-child(3) {
+        position: absolute;
+        top: 12rem;
+    }
+}
+
 
 /* For small-size screens */
 @media (min-width: 660px){
@@ -252,6 +303,11 @@ html, body {
     font-size: 20px;
     padding: 8px;
     border-radius: 0;
+    background-color: #5d985d;
+}
+
+#signupForm button:hover {
+    opacity: 0.7;
 }
 
 footer {

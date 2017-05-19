@@ -64,13 +64,33 @@ var benefitsScroll = false;
 // Benefits section fade in
 inView('.section3').on('enter', function(){
     if(benefitsScroll === false){
-        $('.benefit').removeClass('hidden').delay(1000).fadeIn(1000);
+        $('.benefit:nth-child(1)').removeClass('hidden').delay(1000).fadeIn(1000);
+        $('.benefit:nth-child(2)').removeClass('hidden').delay(1500).fadeIn(1000);
+        $('.benefit:nth-child(3)').removeClass('hidden').delay(2000).fadeIn(1000);
         benefitsScroll = true;
     };
 });
 
 // Images fade in
 
+
+// Set signup Boolean
+var signupScroll = false;
+
+// Sign up section fade in
+inView('.section5').on('enter', function(){
+    if(signupScroll === false){
+        $('.signupText').removeClass('hidden').delay(1000).fadeIn(1000);
+        $('#signupForm').removeClass('hidden').delay(1000).fadeIn(1000);
+        signupScroll = true;
+    };
+});
+
+// Countdown
+
+
+
+// Set date for launch, calculate date now, display countdown
 
 // Arrow fades at top
 $(window).scroll(_.debounce(function(){
@@ -87,7 +107,7 @@ $.fn.scrollBottom = function(){
     return $(document).height() - this.scrollTop() - this.height();
 };
 
- // Arrow moves up above social media icons at bottom
+// Arrow moves up above social media icons at bottom
 $(window).scroll(_.debounce(function(){
     if($(this).scrollBottom() < 100){
         //console.log('move up');
@@ -101,9 +121,3 @@ $(window).scroll(_.debounce(function(){
         }, 100);
     }
 }, 100));
-
-// Countdown
-
-
-
-// Set date for launch, calculate date now, display countdown
