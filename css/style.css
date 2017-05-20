@@ -53,6 +53,7 @@ html, body {
 
 .section1 img {
     height: 250px;
+    width: 250px;
 }
 
 .section2 {
@@ -228,7 +229,7 @@ html, body {
 }
 
 .category img {
-    width: 350px;
+    width: 300px;
     opacity: 0.8;
 }
 
