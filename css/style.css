@@ -38,7 +38,7 @@ html, body {
 }
 
 .section1 {
-    background-image: url(../img/test_mushrooms.jpg);
+    background-image: url(../img/fin_mushrooms.jpg);
     
     animation: animatedBackground 100s linear infinite;
 }
@@ -113,7 +113,7 @@ html, body {
 }
 
 .section3 {
-    background-image: url(../img/bg_onions.jpg);
+    background-image: url(../img/fin_onions.jpg);
 }
 
 .benefits {
@@ -259,7 +259,7 @@ html, body {
 }
 
 .section5 {
-    background-image: url(../img/test_lemons.jpg);
+    background-image: url(../img/fin_lemons.jpg);
 }
 
 .section5 h1 {
