@@ -56,9 +56,6 @@ inView('.section3').on('enter', function(){
     };
 });
 
-// Images fade in
-
-
 // Set signup Boolean
 var signupScroll = false;
 
@@ -89,7 +86,7 @@ var countDown = setInterval(function(){
         seconds = Math.floor((currentTime % (60 * 1000)) / 1000);
     
     // print countdown on page
-    document.getElementById('countdown').innerHTML = days + " days " + hours + "hours " + minutes + "minutes " + seconds + "seconds till launch<br>get notified for launch";
+    document.getElementById('countdown').innerHTML = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds till launch<br>get notified for launch";
     
     // when countdown is finished, display alternate text
     if(currentTime < 0){
@@ -106,6 +103,7 @@ $(window).scroll(_.debounce(function(){
     }else{
         $('.arrow-to-top').fadeIn(300);
     }
+    // debounce - scroll events only fire once every 100ms
 }, 100));
 
 // Scroll bottom function

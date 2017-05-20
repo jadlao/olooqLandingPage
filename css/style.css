@@ -38,7 +38,7 @@ html, body {
 }
 
 .section1 {
-    background-image: url(../img/bg_mushrooms.jpg);
+    background-image: url(../img/test_mushrooms.jpg);
     
     animation: animatedBackground 100s linear infinite;
 }
@@ -227,6 +227,10 @@ html, body {
     padding: 0;
 }
 
+.category img {
+    width: 350px;
+}
+
 .category h2 {
     position: absolute; 
     bottom: 5%;
@@ -237,19 +241,24 @@ html, body {
 /* For xs sized screens */
 @media (max-width: 768px) {
     .section4 {
-        height: 150vh;
+        height: 75vh;
     }
     .category {
         height: 25vh;
     }
 }
 
-.category:hover {
+.category .image img {
+    transition: all .2s ease-in-out;
+}
+
+.category .image img:hover {
+    transform: scale(1.1);
     opacity: 0.7;
 }
 
 .section5 {
-    background-image: url(../img/bg_lemons.jpg);
+    background-image: url(../img/test_lemons.jpg);
 }
 
 .section5 h1 {
