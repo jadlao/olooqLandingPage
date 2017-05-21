@@ -51,9 +51,20 @@ html, body {
     -webkit-transform: translateY(-50%);
 }
 
+/* For xs-size screens */
+@media (max-width: 660px) {
+    .section1 * {
+        position: relative;
+        top: 20%;
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
+}
+
 .section1 img {
-    height: 250px;
-    width: 250px;
+    height: 230px;
+    width: 230px;
 }
 
 .section2 {
@@ -289,6 +300,26 @@ html, body {
         margin-right: 5%;
         margin-left: 5%;
         width: 90%;
+        top: 30%;
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
+    
+    .section5 h1 {
+        position: relative;
+        top: 30%;
+        font-size: 3rem;
+    }
+}
+
+/* For xs sized screens */
+@media (max-width: 400px){
+    #signupForm {
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 90%;
+        top: 20%;
         transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
@@ -337,6 +368,7 @@ footer .social {
 
 footer .icon {
     padding-bottom: 15px;
+    margin-left: -10px;
 }
 
 footer .icon i:first-child {
