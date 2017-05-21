@@ -259,10 +259,10 @@ html, body {
 /* For xs sized screens */
 @media (max-width: 768px) {
     .section4 {
-        height: 75vh;
+        height: 100vh;
     }
     .category {
-        height: 25vh;
+        height: 33.33333vh;
     }
 }
 
