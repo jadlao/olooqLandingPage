@@ -100,14 +100,12 @@ var countDown = setInterval(function(){
 }, 1000);
 
 // Arrow fades at top
-$(window).scroll(_.debounce(function(){
-    if($(this).scrollTop() < 100){
-        $('.arrow-to-top').fadeOut(300);
-    }else{
-        $('.arrow-to-top').fadeIn(300);
-    }
-    // debounce - scroll events only fire once every 100ms
-}, 100));
+inView('.section1').on('enter', function(){
+    $('.arrow-to-top').fadeOut(300);
+});
+inView('.section1').on('exit', function(){
+    $('.arrow-to-top').fadeIn(300);
+});
 
 // Scroll bottom function
 $.fn.scrollBottom = function(){
@@ -128,4 +126,5 @@ $(window).scroll(_.debounce(function(){
             bottom: '+45'
         }, 100);
     }
+    // debounce - scroll events only fire once every 100ms
 }, 100));
