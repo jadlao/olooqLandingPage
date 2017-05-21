@@ -16,8 +16,8 @@ function navDotColor(enterDiv, navDot){
     
     // Offset to avoid two colors active at once
     inView.offset({
-        top: 380,
-        bottom: 380
+        top: 370,
+        bottom: 370
     });
     inView(enterDiv).on('enter', function(){
         $(navDot).css('background-color', enterColor);
