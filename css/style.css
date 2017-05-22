@@ -39,6 +39,8 @@ html, body {
 
 .section1 {
     background-image: url(../img/fin_mushrooms.jpg);
+    background-attachment: fixed;
+    background-size: cover;
     
     animation: animatedBackground 100s linear infinite;
 }
@@ -131,6 +133,8 @@ html, body {
 
 .section3 {
     background-image: url(../img/fin_onions.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .benefits {
@@ -277,6 +281,8 @@ html, body {
 
 .section5 {
     background-image: url(../img/fin_lemons.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .section5 h1 {
