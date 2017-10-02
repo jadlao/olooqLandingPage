@@ -10,6 +10,7 @@ html, body {
     to { background-position: 100% 0; }
 }
 
+/* Side Navigation */
 .nav-dots {
     position: fixed;
     z-index: 10;
@@ -36,6 +37,7 @@ html, body {
     height: 100vh;
 }
 
+/* Opening Section */
 .section1 {
     background-image: url(../img/fin_mushrooms.jpg);
     background-size: cover;
@@ -49,6 +51,10 @@ html, body {
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
+}
+
+.section1 h1 {
+    margin-top: -40px;   
 }
 
 .section1 img {
@@ -72,8 +78,14 @@ html, body {
     }
 }
 
+/* Features Section */
 .section2 {
     background-color: #ddd;
+}
+
+.section2 h1 {
+    margin-top: 55px;
+    letter-spacing: 1.5px;
 }
 
 .section2 .row {
@@ -129,14 +141,20 @@ html, body {
     }
 }
 
+/* Benefits Section */
 .section3 {
     background-image: url(../img/fin_onions.jpg);
     background-size: cover;
 }
 
+.section3 h1 {
+    margin-top: 55px;
+    letter-spacing: 1.5px;
+}
+
 .benefits {
     position: relative;
-    top: 30%;
+    top: 25%;
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -165,7 +183,7 @@ html, body {
 @media (max-width: 660px) {
     .benefits {
         position: relative;
-        top: 30%;
+        top: 25%;
         transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
@@ -232,6 +250,7 @@ html, body {
     }
 }
 
+/* Categories Section */
 .section4 {
     background-color: #ddd;
     padding: 0;
@@ -276,6 +295,7 @@ html, body {
     opacity: 1;
 }
 
+/* Sign Up Section */
 .section5 {
     background-image: url(../img/fin_lemons.jpg);
     background-size: cover;
@@ -295,7 +315,7 @@ html, body {
     margin-top: 50px;
     width: 85%;
     position: relative;
-    top: 30%;
+    top: 20%;
     transform: translateY(20%);
     -ms-transform: translateY(20%);
     -webkit-transform: translateY(20%);
@@ -307,7 +327,7 @@ html, body {
         margin-right: 5%;
         margin-left: 5%;
         width: 90%;
-        top: 30%;
+        top: 20%;
         transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
@@ -344,13 +364,16 @@ html, body {
 
 #signupForm input {
     font-size: 20px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 0;
+    height: 100%;
+    /* height property for FF & IE padding fix */
 }
 
 #signupForm button {
     font-size: 20px;
-    padding: 8px;
+    letter-spacing: 1.5px;
+    padding: 12px 10px 10px 10px;
     border-radius: 0;
     background-color: #5d985d;
 }
@@ -359,6 +382,7 @@ html, body {
     opacity: 0.7;
 }
 
+/* Footer */
 footer {
     padding: 15px;
     margin-left: -15px;
@@ -366,6 +390,7 @@ footer {
     line-height: 1.8;
 }
 
+/* Social Media Icons */
 footer .social {
     float: right;
     position: relative;
@@ -392,13 +417,13 @@ footer .icon:hover {
 /* Arrow to top of page */
 footer .arrow-to-top {
     position: fixed;
-    bottom: 45px;
-    right: 53px;
-    font-size: 1em;
+    bottom: 50px;
+    right: 55px;
+    font-size: 1.3em;
 }
 
 footer .arrow-to-top i {
-    color: #b2b2b2;
+    color: #969696;
 }
 
 footer .arrow-to-top i:hover {

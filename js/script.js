@@ -73,7 +73,7 @@ inView('.section5').on('enter', function(){
 
 // Countdown
 // Set date for launch
-var countdownDate = new Date('Oct 5, 2017 14:00:00').getTime();
+var countdownDate = new Date('Nov 4, 2017 14:00:00').getTime();
 
 var countDown = setInterval(function(){
     // Today's date and time
@@ -89,7 +89,7 @@ var countDown = setInterval(function(){
         seconds = Math.floor((currentTime % (60 * 1000)) / 1000);
     
     // print countdown on page
-    document.getElementById('countdown').innerHTML = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds till launch<br>get notified for launch";
+    document.getElementById('countdown').innerHTML = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds till launch<br><br>Get notified for launch:";
     
     // when countdown is finished, display alternate text
     if(currentTime < 0){
@@ -118,12 +118,12 @@ $(window).scroll(_.debounce(function(){
     if($(this).scrollBottom() < 100){
         //console.log('move up');
         $('.arrow-to-top').stop().animate({
-            bottom: '+90'
+            bottom: '+100'
         }, 100);
     }else{
         //console.log('move down');
         $('.arrow-to-top').stop().animate({
-            bottom: '+45'
+            bottom: '+50'
         }, 100);
     }
     // debounce - scroll events only fire once every 100ms
