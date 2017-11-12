@@ -12,7 +12,11 @@ Demo: https://jadlao.github.io/olooqLandingPage
 * I can see animations activating upon scrolling to the corresponding div
 * I can see a real-time countdown till launch day
 
-# Video Walkthrough:
-![Alt Text](https://image.ibb.co/mcqFCF/olooq1.gif)
+# Preview:
+![Alt Text](https://image.ibb.co/mU1tsb/olooq01.jpg)
 
-![Alt Text](https://image.ibb.co/fXqqCF/olooq2.gif)
+![Alt Text](https://image.ibb.co/b5nBdG/olooq02.jpg)
+
+![Alt Text](https://image.ibb.co/gzm4yG/olooq03.jpg)
+
+![Alt Text](https://image.ibb.co/mubMdG/olooq04.jpg)
