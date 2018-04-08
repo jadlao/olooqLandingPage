@@ -3,9 +3,7 @@ Olooq was designed as a landing page for an organic products comparison website.
 
 Stack: Bootstrap, CSS Flexbox, jQuery, Animate.css, in-view.js, underscore.js
 
-Blog post: https://josefadlao.com/blog/posts/2017-05/olooq
-
-Demo: https://jadlao.github.io/olooqLandingPage
+Demo: https://jadlao-olooq.surge.sh
 
 # User Stories:
 * I can scroll to different sections on clicking navigation buttons
