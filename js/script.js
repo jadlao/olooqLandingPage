@@ -73,7 +73,7 @@ inView('.section5').on('enter', function(){
 
 // Countdown
 // Set date for launch
-var countdownDate = new Date('Jan 1, 2018 00:00:00').getTime();
+var countdownDate = new Date('Jan 1, 2020 00:00:00').getTime();
 
 var countDown = setInterval(function(){
     // Today's date and time
